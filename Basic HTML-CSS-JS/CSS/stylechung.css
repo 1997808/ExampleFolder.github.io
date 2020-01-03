@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto','arial';
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+i {
+    position: relative;
+}
+
+i::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+p {
+    margin-bottom: 0;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    min-height: 100%;
+    padding-bottom: 230px;
+}
+
+html {
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 { margin-bottom: 0; }

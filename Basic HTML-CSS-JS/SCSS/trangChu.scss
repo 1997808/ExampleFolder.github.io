@@ -1,0 +1,261 @@
+.gioi_Thieu {
+    background-image: url("../../img/Stock/StockSnap_N7FUTW0RY5.jpg");
+    background-size: cover;
+    padding-bottom: 50px;
+
+    h1 {
+        font-size: $font_thicc;
+        font-weight: $font_w_bold;
+        text-align: center;
+        padding: 130px 0 20px 0;
+    }
+
+    .button {
+        height: 50px;
+        color: white;
+        background: $bg_dark;
+        border-radius: $radius_2;
+        margin-top: 15px;
+        font-size: $font_medium;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.body {
+    text-align: center;
+
+    h2, h3, h4 {
+        font-weight: $font_w_bold;
+    }
+    h2 {
+        font-size: $font_big;
+        padding-top: 10px;
+        border-top: $border_gray;
+    }
+
+    h3 {
+        font-size: $font_medium;
+    }
+
+    h4 {
+        font-size: $font_small_2;
+    }
+
+    ul {
+        font-size: $font_small;
+    }
+
+    
+
+    
+
+    .sanPham {
+        .pic_sanPham {
+            width: 100%;
+            height: 35vw;
+            object-fit: scale-down;
+            margin: 5px 0 5px 0;
+        }
+    }
+
+    .trangChu_blog {
+        
+        .trai_blog {
+            border-right: $border_gray;
+        }
+        .trai_blog,
+        .phai_blog {
+            .pic_blogtrai,
+            .pic_blogphai {
+                width: 100%;
+                object-fit: scale-down;
+                margin: 5px 0 5px 0;
+            }
+
+            .pic_blogtrai {
+                height: 50vw;
+            }
+
+            .pic_blogphai {
+                height: 20vw;
+            }
+        }
+    }
+
+    .trangChu_linhKien {
+        p {
+            font-size: $font_small;
+            padding-bottom: 5px;
+        }
+
+        .pic_sanPham_2 {
+            width: 100%;
+            height: 25vw;
+            object-fit: scale-down;
+        }
+    }
+
+    .button_1 {
+        margin: 20px 0 40px 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .body {
+        .sanPham {
+            .pic_sanPham {
+                height: 25vw;
+            }
+        }
+    
+        .trangChu_blog {
+            
+            .trai_blog {
+                border-right: none;
+            }
+
+            .trai_blog,
+            .phai_blog {
+
+                .pic_blogtrai,
+                .pic_blogphai {
+                    object-fit: cover;
+                }
+    
+                .pic_blogtrai {
+                    height: 40vw;
+                }
+            }
+        }
+    
+        .trangChu_linhKien { 
+            .pic_sanPham_2 {
+                height: 15vw;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .gioi_Thieu {
+        background-image: url("../../img/Stock/StockSnap_JKYVIPMTIY.jpg");
+        background-position: center center;
+        height: 650px;
+        position: relative;
+    
+        h1 {
+            font-size: $font_thicc;
+            font-weight: $font_w_bold;
+            text-align: center;
+            padding: 230px 0 0 0;
+        }
+    
+        .button {
+            height: 70px;
+            margin-top: 0;
+        }
+
+        .gioi_Thieu_row {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%)
+        }
+    }
+
+    .body {
+
+        h2 {
+            border-top: none; 
+        }
+
+        .gioi_Thieu_May_Bar {
+            border-top: $border_gray;
+            border-bottom: $border_gray;
+
+            .gioi_Thieu_May {
+                background: #eee;
+                padding-left: 0px;
+
+                .gioi_Thieu_May_1 {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }   
+            .button_1 {
+                margin-bottom: 0px;
+            } 
+        }
+        
+        .h2_style {
+            padding: 0px 40px;
+        }
+
+        .sanPham {
+            .pic_sanPham {
+                height: 15vw;
+            }
+
+            ul {
+                padding: 10px 0 10px 0;
+            }
+        }
+
+        .trangChu_pc {
+            padding: 30px 0 30px 0;   
+        }
+        .trangChu_laptop {
+            padding: 30px 0 30px 0;   
+        }
+
+        .trangChu_blog {
+            h2 {
+                padding: 30px 0 30px 0;    
+            }
+            .trai_blog {
+                border-left: $border_gray;
+                border-right: $border_gray;
+            }
+
+            .trai_blog,
+            .phai_blog {
+
+                .button_1 {
+                    margin-top: 3vw;
+                    margin-bottom: 0px;
+                }
+
+                .pic_blogtrai,
+                .pic_blogphai {
+                    object-fit: cover;
+                }
+
+                .pic_blogtrai {
+                    height: 26vw;
+                }
+
+                .pic_blogphai {
+                    height: 15vw;
+                }
+            }
+        }
+
+        .trangChu_linhKien { 
+            .linhKien_p {
+                padding: 90px 0 10px 0;       
+            }
+            .sanPham_2 {
+                padding-bottom: 10px;
+
+                .pic_sanPham_2 {
+                    height: 10vw;
+                    padding: 10px 0 10px 0;
+                }
+            }
+        }
+    }
+}

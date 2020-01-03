@@ -1,0 +1,71 @@
+.header {
+    height: 100px;
+    background: $bg_dark;
+    align-items: center;
+    position: fixed;
+    z-index: 9;
+
+    .loGo {
+        height: 60px;
+    }
+
+    i {
+        color: white;
+        font-size: 40px;
+    }
+}
+
+.logo-wrapper,
+.iconMenu {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.iconMenu {
+    right: 20px;
+}
+
+
+.menu {
+    width: 100vw;
+    height: 200px;
+    background: $bg_dark;
+    position: fixed;
+    top: -200px;
+    transition: .2s;
+    z-index: 1;
+    
+    li {
+        height: 50px;
+        color: $main_white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: $font_small_2;
+    }
+
+    &.active {
+        top: 100px;
+    }
+}
+
+@media (min-width: 768px) {
+    .menu {
+        position: static;
+        height: auto;
+        width: auto;
+        margin-left: auto;  
+        margin-right: 10vw;
+
+        li {
+            padding-left: 5vw;
+
+            a:hover {
+                color: white;
+            }
+        }
+    }      
+}
+

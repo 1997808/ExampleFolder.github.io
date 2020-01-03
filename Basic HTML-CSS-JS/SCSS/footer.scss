@@ -1,0 +1,27 @@
+.footer {
+    height: 200px;
+    background: $bg_dark;
+    align-items: center;
+    color: $main_white;
+    margin-top: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    a {
+        align-items: center;
+        .loGo {
+            height: 60px;
+        }
+    }
+
+    h3 {
+        font-size: $font_medium;
+        padding-bottom: 5px;
+    }
+
+    ul, p {
+        font-size: $font_small;
+    }
+}
